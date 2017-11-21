@@ -84,6 +84,17 @@ function qichacha(str)
 	}
 	document.getElementById("txt1").select();
 }
+function chaDianHua(str)
+{	
+
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://image.58.com/showphone.aspx?t=v55&v="+str ;
+		document.getElementById("image").src=url;
+		//window.open(url);
+		//window.close();
+	}
+}
 
 </script>
 
@@ -104,8 +115,11 @@ function qichacha(str)
 		<button type="button" onclick="ganji(this.value)">赶集网</button>
 		<button type="button" onclick="wuyi(this.value)">前程无忧</button>
 		<button type="button" onclick="qichacha(this.value)">企查查</button>
+		<button type="button" onclick="chaDianHua(this.value)">查电话</button>
 
 	</form>
+	<br/>
+	<img src="#" id="image"/>
 </center>		
 </body>
 </html>
