@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head><title>客户中标信息查询页面-烟台</title>
+<script>
+
+function check(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+}
+
+function baidu(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.baidu.com/s?ie=utf-8&wd="+encodeURI(str) ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function zhilian(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8C%BA&kw="+encodeURI(str)+"&&p=1&isadv=0" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+	
+}
+
+function wuba(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://yt.58.com/sou/?key="+encodeURI(str)+"&button=%E6%90%9C%C2%A0%E7%B4%A2" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function ganji(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://yt.ganji.com/site/s/_"+encodeURI(str)+"/" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function wuyi(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://search.51job.com/jobsearch/search_result.php?fromJs=1&keyword="+encodeURI(str)+"&keywordtype=2&lang=c&stype=2&postchannel=0000&fromType=1&confirmdate=9" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function qichacha(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.qichacha.com/search?key="+encodeURI(str);
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+</script>
+
+</head>
+<body>
+<br>
+<center>
+		<br>
+	<form action="" method="post">
+		<h2><b>请输入要查询的公司名称：</b></h2>
+		
+		<br>
+		<textarea name="note" cols=80 rows=6 id="txt1"></textarea><br><br>
+		
+		<button type="button" onclick="baidu(this.value)">百度一下</button>
+		<button type="button" onclick="zhilian(this.value)">智联招聘</button>
+		<button type="button" onclick="wuba(this.value)">58同城</button>
+		<button type="button" onclick="ganji(this.value)">赶集网</button>
+		<button type="button" onclick="wuyi(this.value)">前程无忧</button>
+		<button type="button" onclick="qichacha(this.value)">企查查</button>
+
+	</form>
+	<br/>
+
+</center>		
+</body>
+</html>
