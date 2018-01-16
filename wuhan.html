@@ -1,14 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-<head><title>¿Í»§ÖĞ±êĞÅÏ¢²éÑ¯Ò³Ãæ-Îäºº</title>
+<head><title>å®¢æˆ·ä¸­æ ‡ä¿¡æ¯æŸ¥è¯¢é¡µé¢-æ­¦æ±‰</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 <script>
 function check(str)
 {	
 	var str = document.getElementById("txt1").value;
 	if(!str==""){
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 }
 function baidu(str)
@@ -18,7 +19,7 @@ function baidu(str)
 		var url = "https://www.baidu.com/s?ie=utf-8&wd="+encodeURI(str) ;
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 }
@@ -29,7 +30,7 @@ function zhilian(str)
 		var url = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8C%BA&kw="+encodeURI(str)+"&&p=1&isadv=0" ;
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 	
@@ -41,7 +42,7 @@ function wuba(str)
 		var url = "http://wh.58.com/sou/?key="+encodeURI(str)+"&button=%E6%90%9C%C2%A0%E7%B4%A2" ;
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 }
@@ -52,7 +53,7 @@ function ganji(str)
 		var url = "http://wh.ganji.com/site/s/_"+encodeURI(str)+"/" ;
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 }
@@ -63,7 +64,7 @@ function wuyi(str)
 		var url = "http://search.51job.com/jobsearch/search_result.php?fromJs=1&keyword="+encodeURI(str)+"&keywordtype=2&lang=c&stype=2&postchannel=0000&fromType=1&confirmdate=9" ;
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 }
@@ -74,7 +75,7 @@ function qichacha(str)
 		var url = "https://www.qichacha.com/search?key="+encodeURI(str);
 		window.open(url);
 	}else{
-		alert("ÇëÊäÈëÒª²éÑ¯µÄÄÚÈİ£¬Ç×Ç×~~~");
+		alert("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å†…å®¹ï¼Œäº²äº²~~~");
 	}
 	document.getElementById("txt1").select();
 }
@@ -86,17 +87,17 @@ function qichacha(str)
 <center>
 		<br>
 	<form action="" method="post">
-		<h2><b>ÇëÊäÈëÒª²éÑ¯µÄ¹«Ë¾Ãû³Æ£º</b></h2>
+		<h2><b>è¯·è¾“å…¥è¦æŸ¥è¯¢çš„å…¬å¸åç§°ï¼š</b></h2>
 		
 		<br>
 		<textarea name="note" cols=80 rows=6 id="txt1"></textarea><br><br>
 		
-		<button type="button" onclick="baidu(this.value)">°Ù¶ÈÒ»ÏÂ</button>
-		<button type="button" onclick="zhilian(this.value)">ÖÇÁªÕĞÆ¸</button>
-		<button type="button" onclick="wuba(this.value)">58Í¬³Ç</button>
-		<button type="button" onclick="ganji(this.value)">¸Ï¼¯Íø</button>
-		<button type="button" onclick="wuyi(this.value)">Ç°³ÌÎŞÓÇ</button>
-		<button type="button" onclick="qichacha(this.value)">Æó²é²é</button>
+		<button type="button" onclick="baidu(this.value)">ç™¾åº¦ä¸€ä¸‹</button>
+		<button type="button" onclick="zhilian(this.value)">æ™ºè”æ‹›è˜</button>
+		<button type="button" onclick="wuba(this.value)">58åŒåŸ</button>
+		<button type="button" onclick="ganji(this.value)">èµ¶é›†ç½‘</button>
+		<button type="button" onclick="wuyi(this.value)">å‰ç¨‹æ— å¿§</button>
+		<button type="button" onclick="qichacha(this.value)">ä¼æŸ¥æŸ¥</button>
 
 	</form>
 	<br/>
