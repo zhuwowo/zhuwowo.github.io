@@ -35,6 +35,19 @@ function zhilian(str)
 	document.getElementById("txt1").select();
 	
 }
+
+function liepin(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.liepin.com/zhaopin/?key="+encodeURI(str) ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+	
+}
 function boss(str)
 {	
 	var str = document.getElementById("txt1").value;
@@ -95,6 +108,7 @@ function qichacha(str)
 		<button type="button" onclick="baidu(this.value)">百度一下</button>
 		<button type="button" onclick="zhilian(this.value)">智联招聘</button>
 		<button type="button" onclick="wuyi(this.value)">前程无忧</button>
+		<button type="button" onclick="liepin(this.value)">猎聘网</button>
 		<button type="button" onclick="zhuopin(this.value)">智联卓聘</button>
 		<button type="button" onclick="boss(this.value)">boss直聘</button>
 		<button type="button" onclick="qichacha(this.value)">企查查</button>
