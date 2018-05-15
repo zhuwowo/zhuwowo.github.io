@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0033)https://zhuwowo.github.io/yy.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>客户中标信息查询页面-北京</title>
+	
+<script>
+function check(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+}
+function baidu(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.baidu.com/s?ie=utf-8&wd="+encodeURI(str) ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+function zhilian(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8C%BA&kw="+encodeURI(str)+"&&p=1&isadv=0" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+	
+}
+
+function liepin(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.liepin.com/zhaopin/?key="+encodeURI(str) ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+	
+}
+function boss(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.zhipin.com/job_detail/?query="+encodeURI(str) ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+function zhuopin(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://www.highpin.cn/zhiwei/qw_"+encodeURI(str)+".html" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+function wuyi(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "http://search.51job.com/jobsearch/search_result.php?fromJs=1&keyword="+encodeURI(str)+"&keywordtype=2&lang=c&stype=2&postchannel=0000&fromType=1&confirmdate=9" ;
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+function qichacha(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.qichacha.com/search?key="+encodeURI(str);
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function tianyancha(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.tianyancha.com/search?key="+encodeURI(str);
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function dajie(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://so.dajie.com/job/search?keyword="+encodeURI(str);
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+function lagou(str)
+{	
+	var str = document.getElementById("txt1").value;
+	if(!str==""){
+		var url = "https://www.lagou.com/jobs/list_"+str+"?city=北京&cl=false&fromSearch=true&labelWords=&suginput=";
+		window.open(url);
+	}else{
+		alert("请输入要查询的内容，亲亲~~~");
+	}
+	document.getElementById("txt1").select();
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+<br>
+<center>
+		<br>
+	<form action="https://zhuwowo.github.io/yy.html" method="post">
+		<h2><b>请输入要查询的公司名称：</b></h2>
+		
+		<br>
+		<textarea name="note" cols="80" rows="6" id="txt1"></textarea><br><br>
+		
+		<button type="button" onclick="baidu(this.value)">百度一下</button>
+		<button type="button" onclick="zhilian(this.value)">智联招聘</button>
+		<button type="button" onclick="wuyi(this.value)">前程无忧</button>
+		<button type="button" onclick="liepin(this.value)">猎聘网</button>
+		<button type="button" onclick="zhuopin(this.value)">智联卓聘</button>
+		<button type="button" onclick="boss(this.value)">boss直聘</button>
+		<button type="button" onclick="dajie(this.value)">大街网</button>
+		<button type="button" onclick="lagou(this.value)">拉钩网</button>
+		<button type="button" onclick="qichacha(this.value)">企查查</button>
+		<button type="button" onclick="tianyancha(this.value)">天眼查</button>
+
+	</form>
+	<br>
+
+</center>		
+
+
+</body></html>
