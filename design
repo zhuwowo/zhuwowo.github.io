@@ -1,0 +1,85 @@
+
+Config file:
+
+	Connect info:
+		-------------------------------
+		HOSTNAME	localhost
+		PORT	8080
+		USERNAME	root
+		PASSWORD	admin
+		DATABASE	[coe00020]	-- 允许多个DB
+		-------------------------------
+
+	Table settings:	-- Common 设定，根据ACCESS_PERMISSION进行二次设定
+		-------------------------------
+		ALLOW_TABLES:[]
+		EXCEPT_TABLES:[]
+
+		Default:
+			DEFAULT_ROWS	-- 默认请求返回数据条数
+			MAX_ROWS	-- 单次请求最大数据条数
+
+			SELECT_COLUMNS:[]	-- 返回的字段（空，则返回所有字段）
+			EXCEPT_COLUMNS:[]	-- 去掉的字段（从SELECT_COLUMNS里面删除掉）
+
+		DB.Table:
+			DEFAULT_ROWS
+			MAX_ROWS
+
+			SELECT_COLUMNS:[]
+			EXCEPT_COLUMNS:[]
+
+		...
+
+		-------------------------------
+
+
+
+
+
+DATA_FORMAT: {
+	
+}
+
+-------------------------------
+
+USER
+GROUP
+PERMISSION
+	ALLOW_SQL:False
+	DB.CREATE.COLUMN_NAME
+	DB.DELETE.COLUMN_NAME
+	DB.UPDATE.COLUMN_NAME
+	DB.SELECT.COLUMN_NAME
+
+ACCESS_PERMISSION
+	USER/GROUP	ALLOW_SQL:False
+	USER/GROUP	DB.CREATE.COLUMN_NAME
+	USER/GROUP	DB.DELETE.COLUMN_NAME
+	USER/GROUP	DB.UPDATE.COLUMN_NAME
+	USER/GROUP	DB.SELECT.COLUMN_NAME
+
+-------------------------------
+
+GET
+POST
+PUT
+PATCH
+DELETE
+
+
+
+Mysql调查点：
+	视图
+	函数
+	事件
+	查询
+	报表
+	备份
+
+
+
+
+
+
+
