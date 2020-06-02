@@ -1,3 +1,17 @@
+"@SQL=""urn:schemas:httpmail:subject"" LIKE '%抽出キー%'"
+
+
+
+
+
+
+
+
+
+
+
+
+
 https://github.com/toobigdata/papa
 
 Spiders:
